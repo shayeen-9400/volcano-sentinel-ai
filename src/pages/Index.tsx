@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-card to-background">
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-card to-background">
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
           <Badge variant="destructive" className="mb-4 text-sm">
@@ -26,10 +26,6 @@ const Index = () => {
             Volcano Sentinel AI
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Advanced machine learning system for real-time volcanic eruption detection, 
-            prediction, and automated alert generation using seismic, thermal, and gas emission data.
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -56,16 +52,12 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Real-Time Monitoring & AI Prediction
+              AI-Powered Volcano Monitoring
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Combining seismic sensors, thermal imaging, and gas emission analysis 
-              with advanced machine learning algorithms for accurate eruption forecasting.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-colors">
+            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transform-gpu">
               <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-gradient-seismic flex items-center justify-center">
                 <Activity className="w-6 h-6 text-white" />
               </div>
@@ -75,7 +67,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-colors">
+            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transform-gpu">
               <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-gradient-thermal flex items-center justify-center">
                 <Satellite className="w-6 h-6 text-white" />
               </div>
@@ -85,7 +77,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-colors">
+            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transform-gpu">
               <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-gradient-volcanic flex items-center justify-center">
                 <Brain className="w-6 h-6 text-white" />
               </div>
@@ -95,7 +87,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-colors">
+            <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transform-gpu">
               <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-gradient-safe flex items-center justify-center">
                 <Shield className="w-6 h-6 text-white" />
               </div>
