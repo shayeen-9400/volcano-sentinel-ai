@@ -1,7 +1,7 @@
 import { VolcanoDashboard } from "@/components/VolcanoDashboard";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/volcano-hero.jpg";
+
 import { 
   Satellite, 
   Brain, 
@@ -15,25 +15,18 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-card to-background">
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <Badge variant="warning" className="mb-4 text-sm">
-            🌋 AI-Powered Early Warning System
+          <Badge variant="destructive" className="mb-4 text-sm">
+            AI-Powered Early Warning System
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
             Volcano Sentinel AI
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Advanced machine learning system for real-time volcanic eruption detection, 
             prediction, and automated alert generation using seismic, thermal, and gas emission data.
           </p>
@@ -41,7 +34,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-gradient-volcanic text-white hover:bg-primary/90 shadow-volcanic"
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <Play className="w-5 h-5 mr-2" />
               View Live Dashboard
@@ -49,7 +42,7 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+              className="border-border hover:bg-accent"
             >
               <BarChart3 className="w-5 h-5 mr-2" />
               ML Analysis Report
@@ -120,23 +113,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Technology Stack */}
-      <section className="py-16 px-6 bg-card/20">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8">Technology Stack</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "TensorFlow", "Keras", "scikit-learn", "PyTorch",
-              "Matplotlib", "Seaborn", "OpenCV", "Pandas",
-              "NumPy", "Jupyter", "Docker", "MongoDB"
-            ].map((tech) => (
-              <div key={tech} className="p-4 rounded-lg bg-secondary/30 hover:bg-secondary/50 transition-colors">
-                <div className="font-medium text-foreground">{tech}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 };
