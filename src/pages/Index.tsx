@@ -1,5 +1,6 @@
 import { VolcanoDashboard } from "@/components/VolcanoDashboard";
 import { VolcanoMap } from "@/components/VolcanoMap";
+import { VolcanoAnimation } from "@/components/VolcanoAnimation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -16,12 +17,13 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-accent to-card">
-        <div className="absolute inset-0 bg-gradient-thermal opacity-20"></div>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-hero">
+        <div className="absolute inset-0 bg-gradient-volcanic opacity-30"></div>
+        <VolcanoAnimation />
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <Badge variant="secondary" className="mb-6 text-sm font-medium">
-            Global Volcanic Monitoring System
+          <Badge variant="secondary" className="mb-6 text-sm font-medium backdrop-blur-sm">
+            Professional Volcanic Monitoring System
           </Badge>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent leading-tight">
