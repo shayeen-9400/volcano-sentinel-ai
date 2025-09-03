@@ -1,4 +1,5 @@
 import { VolcanoDashboard } from "@/components/VolcanoDashboard";
+import { VolcanoMap } from "@/components/VolcanoMap";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -15,22 +16,27 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-card to-background">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-accent to-card">
+        <div className="absolute inset-0 bg-gradient-thermal opacity-20"></div>
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <Badge variant="destructive" className="mb-4 text-sm">
-            AI-Powered Early Warning System
+          <Badge variant="secondary" className="mb-6 text-sm font-medium">
+            Global Volcanic Monitoring System
           </Badge>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent leading-tight">
             Volcano Sentinel AI
           </h1>
           
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            Advanced monitoring and prediction system for volcanic activity worldwide, 
+            providing real-time analysis and early warning capabilities.
+          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all"
             >
               <Play className="w-5 h-5 mr-2" />
               View Live Dashboard
@@ -38,12 +44,19 @@ const Index = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-border hover:bg-accent"
+              className="border-border hover:bg-accent/50 shadow-lg hover:shadow-xl transition-all"
             >
               <BarChart3 className="w-5 h-5 mr-2" />
-              ML Analysis Report
+              Analytics Report
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Volcano Map Section */}
+      <section className="py-16 px-6 bg-gradient-to-b from-background to-card/30">
+        <div className="max-w-7xl mx-auto">
+          <VolcanoMap />
         </div>
       </section>
 
@@ -52,8 +65,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              AI-Powered Volcano Monitoring
+              Monitoring Capabilities
             </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive volcanic monitoring through advanced sensor networks and AI analysis
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
