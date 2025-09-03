@@ -8,54 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 208 21% 25%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 7%;
+    --foreground: 197 78% 78%;
 
-    --card: 182 29% 16%;
-    --card-foreground: 0 0% 98%;
+    --card: 197 37% 28%;
+    --card-foreground: 197 78% 78%;
 
-    --popover: 181 30% 32%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 197 37% 28%;
+    --popover-foreground: 197 78% 78%;
 
-    --primary: 340 52% 67%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 197 78% 78%;
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 181 30% 32%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 197 37% 28%;
+    --secondary-foreground: 197 78% 78%;
 
-    --muted: 339 32% 13%;
-    --muted-foreground: 0 0% 80%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 77%;
 
-    --accent: 340 52% 67%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 197 37% 28%;
+    --accent-foreground: 197 78% 78%;
 
-    --destructive: 340 52% 67%;
-    --destructive-foreground: 0 0% 10%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --success: 181 30% 32%;
+    --success: 120 50% 50%;
     --success-foreground: 0 0% 98%;
 
-    --warning: 340 52% 67%;
+    --warning: 45 100% 60%;
     --warning-foreground: 0 0% 10%;
 
-    --danger: 340 52% 67%;
-    --danger-foreground: 0 0% 10%;
+    --danger: 15 100% 60%;
+    --danger-foreground: 0 0% 98%;
 
-    --border: 182 29% 20%;
-    --input: 181 30% 32%;
-    --ring: 340 52% 67%;
+    --border: 197 37% 28%;
+    --input: 197 37% 28%;
+    --ring: 197 78% 78%;
 
     /* Beautiful gradients inspired by the new color palette */
-    --gradient-volcanic: linear-gradient(135deg, hsl(340 52% 67%), hsl(339 32% 13%));
-    --gradient-thermal: linear-gradient(180deg, hsl(181 30% 32%), hsl(340 52% 67%));
-    --gradient-seismic: linear-gradient(135deg, hsl(182 29% 16%), hsl(208 21% 25%));
-    --gradient-safe: linear-gradient(135deg, hsl(181 30% 32%), hsl(182 29% 16%));
-    --gradient-hero: linear-gradient(135deg, hsl(208 21% 25%), hsl(339 32% 13%), hsl(340 52% 67%));
+    --gradient-volcanic: linear-gradient(135deg, hsl(197 78% 78%), hsl(197 37% 28%));
+    --gradient-thermal: linear-gradient(180deg, hsl(197 37% 28%), hsl(197 78% 78%));
+    --gradient-seismic: linear-gradient(135deg, hsl(197 37% 28%), hsl(0 0% 20%));
+    --gradient-safe: linear-gradient(135deg, hsl(120 50% 50%), hsl(120 40% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%), hsl(197 37% 28%), hsl(197 78% 78%));
 
     /* Glow effects */
-    --glow-volcanic: 0 0 40px hsl(340 52% 67% / 0.4);
-    --glow-thermal: 0 0 30px hsl(181 30% 32% / 0.4);
-    --glow-seismic: 0 0 20px hsl(208 21% 25% / 0.4);
+    --glow-volcanic: 0 0 40px hsl(197 78% 78% / 0.4);
+    --glow-thermal: 0 0 30px hsl(197 37% 28% / 0.4);
+    --glow-seismic: 0 0 20px hsl(0 0% 20% / 0.4);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

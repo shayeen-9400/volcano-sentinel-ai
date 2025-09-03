@@ -90,8 +90,8 @@ const volcanoes = [
 const getAlertColor = (level: string) => {
   switch (level) {
     case 'Red': return 'bg-destructive text-destructive-foreground';
-    case 'Orange': return 'bg-warning text-warning-foreground';
-    case 'Yellow': return 'bg-accent text-accent-foreground';
+    case 'Orange': return 'bg-danger text-danger-foreground';
+    case 'Yellow': return 'bg-warning text-warning-foreground';
     case 'Green': return 'bg-success text-success-foreground';
     default: return 'bg-muted text-muted-foreground';
   }

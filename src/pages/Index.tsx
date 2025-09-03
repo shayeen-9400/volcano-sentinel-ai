@@ -22,18 +22,11 @@ const Index = () => {
         <VolcanoAnimation />
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <Badge variant="secondary" className="mb-6 text-sm font-medium backdrop-blur-sm">
-            Professional Volcanic Monitoring System
-          </Badge>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-secondary bg-clip-text text-transparent leading-tight">
             Volcano Sentinel AI
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Advanced monitoring and prediction system for volcanic activity worldwide, 
-            providing real-time analysis and early warning capabilities.
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -65,14 +58,6 @@ const Index = () => {
       {/* Features Section */}
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Monitoring Capabilities
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive volcanic monitoring through advanced sensor networks and AI analysis
-            </p>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <div className="text-center p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-card/70 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 transform-gpu">
