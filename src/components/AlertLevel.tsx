@@ -18,14 +18,14 @@ export function AlertLevel({ level, className }: AlertLevelProps) {
   const alert = alertLevels[level];
   
   return (
-    <div className={cn("flex items-center gap-3", className)}>
+    <div className={cn("flex items-center gap-4", className)}>
       <Badge 
         variant={alert.color as any}
-        className="text-sm font-bold px-3 py-1"
+        className="text-sm font-bold px-4 py-2 min-w-[80px] text-center"
       >
         Level {level}
       </Badge>
-      <div>
+      <div className="flex-1">
         <div className="font-semibold text-foreground">{alert.label}</div>
         <div className="text-sm text-muted-foreground">{alert.description}</div>
       </div>

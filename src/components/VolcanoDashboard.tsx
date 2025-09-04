@@ -112,17 +112,19 @@ export function VolcanoDashboard() {
             <CardTitle>Monitored Volcanoes</CardTitle>
             <CardDescription>Current status of active volcanic systems</CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3">
             {volcanoes.map((volcano, index) => (
-              <div key={index} className="flex items-center justify-between p-3 rounded-lg bg-secondary/50">
-                <div className="flex items-center gap-3">
-                  <Mountain className="w-5 h-5 text-muted-foreground" />
-                  <div>
-                    <div className="font-medium">{volcano.name}</div>
+              <div key={index} className="flex items-center justify-between p-3 rounded-lg bg-secondary/30 border border-border/30">
+                <div className="flex items-center gap-4 flex-1 min-w-0">
+                  <Mountain className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium truncate">{volcano.name}</div>
                     <div className="text-sm text-muted-foreground">{volcano.status}</div>
                   </div>
                 </div>
-                <AlertLevel level={volcano.alertLevel} />
+                <div className="flex-shrink-0">
+                  <AlertLevel level={volcano.alertLevel} />
+                </div>
               </div>
             ))}
           </CardContent>
