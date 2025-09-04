@@ -61,39 +61,6 @@ export function VolcanoAnimation() {
         </svg>
       </div>
 
-      {/* Animated particles */}
-      {particles.map((particle) => (
-        <div
-          key={particle.id}
-          className="absolute w-2 h-2 bg-primary rounded-full animate-bounce"
-          style={{
-            left: `${particle.x}%`,
-            bottom: `${particle.y - 100}px`,
-            width: `${particle.size}px`,
-            height: `${particle.size}px`,
-            opacity: particle.opacity,
-            animationDelay: `${particle.delay}s`,
-            animationDuration: `${2 + particle.velocity}s`,
-            filter: `drop-shadow(0 0 ${particle.size}px hsl(var(--primary) / 0.8))`
-          }}
-        />
-      ))}
-
-      {/* Floating ash particles */}
-      <div className="absolute inset-0">
-        {[...Array(12)].map((_, i) => (
-          <div
-            key={`ash-${i}`}
-            className="absolute w-1 h-1 bg-muted-foreground rounded-full opacity-30 animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 50}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
     </div>
   );
 }
