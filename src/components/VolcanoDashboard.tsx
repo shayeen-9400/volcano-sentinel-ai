@@ -55,15 +55,15 @@ export function VolcanoDashboard() {
   return (
     <div className="space-y-6">
       {/* Current Alert Status */}
-      <Card className="bg-gradient-volcanic shadow-volcanic border-primary/20">
+      <Card className="bg-primary/20 border-primary/40 backdrop-blur-sm">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-white">
+          <CardTitle className="flex items-center gap-2 text-foreground">
             <AlertTriangle className="w-5 h-5" />
             Global Alert Status
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <AlertLevel level={3} className="text-white" />
+          <AlertLevel level={3} className="text-foreground" />
         </CardContent>
       </Card>
 
@@ -130,7 +130,7 @@ export function VolcanoDashboard() {
       </div>
 
       {/* ML Predictions */}
-      <Card className="bg-gradient-seismic border-secondary">
+      <Card className="bg-card/60 border-border/50 backdrop-blur-sm">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Eye className="w-5 h-5" />
@@ -142,15 +142,15 @@ export function VolcanoDashboard() {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="text-center p-4 rounded-lg bg-background/10">
+            <div className="text-center p-4 rounded-lg bg-card/40 border border-border/30">
               <div className="text-2xl font-bold text-primary">94.2%</div>
               <div className="text-sm text-muted-foreground">Pattern Recognition</div>
             </div>
-            <div className="text-center p-4 rounded-lg bg-background/10">
+            <div className="text-center p-4 rounded-lg bg-card/40 border border-border/30">
               <div className="text-2xl font-bold text-accent">7.3 days</div>
               <div className="text-sm text-muted-foreground">Predicted Timeline</div>
             </div>
-            <div className="text-center p-4 rounded-lg bg-background/10">
+            <div className="text-center p-4 rounded-lg bg-card/40 border border-border/30">
               <div className="text-2xl font-bold text-success">0.85</div>
               <div className="text-sm text-muted-foreground">Model Confidence</div>
             </div>

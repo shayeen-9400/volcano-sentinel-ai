@@ -22,10 +22,10 @@ export function DataCard({
   className 
 }: DataCardProps) {
   const variants = {
-    default: "bg-card border-border",
-    volcanic: "bg-gradient-volcanic shadow-volcanic border-primary/20",
-    thermal: "bg-gradient-thermal shadow-thermal border-accent/20", 
-    seismic: "bg-gradient-seismic shadow-seismic border-secondary"
+    default: "bg-card/60 border-border backdrop-blur-sm",
+    volcanic: "bg-card/80 border-primary/30 backdrop-blur-sm",
+    thermal: "bg-card/80 border-accent/30 backdrop-blur-sm", 
+    seismic: "bg-card/80 border-secondary/30 backdrop-blur-sm"
   };
 
   const trendColors = {
@@ -35,7 +35,7 @@ export function DataCard({
   };
 
   return (
-    <Card className={cn(variants[variant], "transition-all duration-300 hover:scale-105", className)}>
+    <Card className={cn(variants[variant], "transition-colors duration-200", className)}>
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium">{title}</CardTitle>
         {icon && <div className="opacity-80">{icon}</div>}
